@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<ng-container *ngIf="data$ | async as data">
+	{{data | json}}
+</ng-container>
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<button type="button" (click)="submit()">Submit</button>
